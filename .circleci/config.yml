@@ -6,6 +6,7 @@ jobs:
       image: ubuntu-2004:202104-01
     steps:
       - checkout
+      - run: make lint
       - run: make deps
       - run: make test
 workflows:
